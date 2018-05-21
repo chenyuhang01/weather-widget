@@ -13,7 +13,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: " <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"col-12 col-sm-8 col-md-6\">\n                            <weather-widget></weather-widget>\n                        </div>\n                    </div>\n                </div>\n                ",
+            template: " <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4\">\n                            <weather-widget></weather-widget>\n                        </div>\n                    </div>\n                </div>\n                ",
             styles: [".container{ padding-top:.5rem;}"]
         })
     ], AppComponent);
