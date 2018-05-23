@@ -1,5 +1,7 @@
 .card{
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .24);
+    transition: background-color .5s ease;
+    cursor: pointer;
 }
 
 .card,
@@ -7,13 +9,12 @@
 .card-header{
     border: none;
     border-radius: 0;
-    background-color: #00BCD4;
-    color: #FFF;
 }
 
 .card-header,
 .card-footer{
     padding: 1rem .4rem;
+    background-color: transparent;
 }
 
 .card-block{
@@ -23,9 +24,43 @@
 .card-block,
 .card-footer{
     text-align: center;
+    
 }
 
 p{
     margin: .2rem;
+}
+
+canvas{
+    max-width: 250px;
+    margin-bottom: 1rem;
+}
+
+#indicator{
+    height: 150px;
+
+}
+
+#indicator i{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+}
+
+#indicator_text_muted{
+    margin-top: 1.5rem;
+}
+
+p:not(.unit-label){
     text-transform: uppercase;
+}
+
+#location-icon{
+    padding-right: .5rem;
+}
+
+#label-wrapper{
+    padding-left: 1rem;
 }

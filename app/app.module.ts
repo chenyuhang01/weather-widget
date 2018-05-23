@@ -3,16 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-import { JsonpModule } from '@angular/http';
+import { JsonpModule, HttpModule } from '@angular/http';
 
 import { WeatherComponent } from './weather-widget/component/weather.component';
-import { WeatherService } from './weather-widget/service/weather.service';
-
+import { SpeedUnitPipe } from './weather-widget/pipe/speed-unit.pipe';
+import { TempUnitPipe } from './weather-widget/pipe/temp-unit.pipe';
 
 @NgModule({
-    imports: [ BrowserModule, JsonpModule ],
-    declarations: [ AppComponent, WeatherComponent ],
-    bootstrap: [ AppComponent ],
-    providers: [ WeatherService ]
+    imports: [ BrowserModule, JsonpModule, HttpModule ],
+    declarations: [ AppComponent, WeatherComponent, SpeedUnitPipe, TempUnitPipe ],
+    bootstrap: [ AppComponent ]
 })
 export class AppModule{ }
